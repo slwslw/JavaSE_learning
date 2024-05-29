@@ -34,5 +34,26 @@ public class HelloWorld {
         System.out.println(unit);
         unit = 999.99;
         System.out.println(unit);
+
+        //定义变量，进行手机描述
+        String brand = "Huawei";
+        String type = "Mate 60";
+        int memory = 256;
+        String color = "亮黑色";
+        double prices = 3098.9;
+        System.out.println(brand);
+        System.out.println(type);
+        System.out.println(memory);
+        System.out.println(color);
+        System.out.println(prices);
+        //双十一打9折
+        prices *= 0.9;
+        System.out.println(prices);
+        if(prices > 1000) {
+            System.out.println(true);
+            prices = 999;
+        }
+        if (prices < 1000)
+            System.out.println(false);
     }
 }
