@@ -1,4 +1,4 @@
-package Day01_normal;
+package Simple_code;
 
 public class Yunsuan {
     public static void main(String[] args) {

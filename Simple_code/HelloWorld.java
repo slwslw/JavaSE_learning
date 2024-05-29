@@ -1,4 +1,4 @@
-package Day01_normal;
+package Simple_code;
 
 public class HelloWorld {
     //main+回车
