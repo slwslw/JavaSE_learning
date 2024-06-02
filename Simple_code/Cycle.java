@@ -50,5 +50,14 @@ public class Cycle {
             }
             System.out.println();
         }
+
+        //死循环
+        /*
+        * for(;;){}
+        * while(true){}
+        * do{}while(true)
+        * continue直接进入下一个循环
+        * break直接跳出循环
+        * */
     }
 }
