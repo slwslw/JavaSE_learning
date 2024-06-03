@@ -15,17 +15,39 @@ public class Student {
     String name;
     int age;
 
+    // 封装：将某些信息隐藏在类内部，不允许外部直接访问
+    // 好处：1. 通过方法来控制成员变量的操作，提高代码安全性。
+    //      2. 把代码用方法进行封装，提高代码复用性。
     // private定义的变量只能在本类里使用，访问需要使用set()和get()方法
     private int height;
+    private int iq;
 
-    public void setHeight(int a) {
+    // Alt + Insert 可以选择，直接生成构造方法和set_get方法
+
+    // 构造方法，类成员的初始化
+    public Student(){ // 无参构造方法
+        System.out.println("无参构造方法");
+    }
+
+    public Student(String name,int age){ // 有参构造方法
+        this.name = name;
+        this.age = age;
+    }
+
+    public void setIq(int iq) { // this: 代表本类对象，可以调用本类成员
+        this.iq = iq; // this.iq调用的成员变量，解决成员变量和局部变量重名问题
+    } // 哪个对象调用方法， this就是哪个对象
+
+    public int getIq() {
+        return iq;
+    }
+
+    public void setHeight(int a) { // 通过set方法设置height值
         if (a < 150) System.out.println("输入身高有误");
         else height = a;
     }
 
-    public int getHeight() {
-        return height;
-    }
+    public int getHeight() { return height; } // 通过get方法输出height值
 
     public void eat() {
         System.out.println("我开始吃饭" + '\n');
