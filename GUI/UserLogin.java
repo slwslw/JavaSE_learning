@@ -55,22 +55,22 @@ public class UserLogin {
                 String password = passwordField.getText();
                 //先判断输入的用户名和密码是否符合要求
                 //用户名和密码的长度都是6-12位
-                if(username.length()<6 || username.length()>12) {
+                if (username.length() < 6 || username.length() > 12) {
                     // System.out.println("用户名的长度是6-12位，请重新输入");
                     //静态的成员方法和成员变量是可以通过类名访问的
-                    JOptionPane.showMessageDialog(jf,"用户名的长度是6-12位，请重新输入");
+                    JOptionPane.showMessageDialog(jf, "用户名的长度是6-12位，请重新输入");
                     usernameField.setText("");
                     return;
                 }
                 //再判断用户登录是否成功
-                if(username.equals(name) && password.equals(pwd)) {
+                if (username.equals(name) && password.equals(pwd)) {
                     // System.out.println("登录成功");
-                    JOptionPane.showMessageDialog(jf,"登录成功");
+                    JOptionPane.showMessageDialog(jf, "登录成功");
                     usernameField.setText("");
                     passwordField.setText("");
                 } else {
                     // System.out.println("用户名或者密码有误");
-                    JOptionPane.showMessageDialog(jf,"用户名或者密码有误");
+                    JOptionPane.showMessageDialog(jf, "用户名或者密码有误");
                 }
             }
         });

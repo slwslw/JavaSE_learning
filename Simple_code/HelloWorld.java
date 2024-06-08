@@ -21,7 +21,7 @@ public class HelloWorld {
         //字符
         System.out.println('A');
         System.out.println('0');
-        System.out.println('我');
+//        System.out.println('我');
 
         //布尔
         System.out.println(true);
