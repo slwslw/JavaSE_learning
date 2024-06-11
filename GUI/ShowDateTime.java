@@ -23,7 +23,7 @@ public class ShowDateTime {
         Date d = new Date();
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日");
-        String dateString = sdf.format(d);
+        String dateString = sdf.format(d); //修改成对应格式日期
 
         //按照格式显示日期的字符串
         JLabel showDateLable = new JLabel(dateString);
