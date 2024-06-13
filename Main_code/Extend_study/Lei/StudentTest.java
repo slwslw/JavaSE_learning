@@ -1,4 +1,4 @@
-package Main_code.Lei;
+package Main_code.Extend_study.Lei;
 
 /*
  * 测试类

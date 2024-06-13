@@ -2,7 +2,19 @@ package Main_code.Extend_study.Extends_02;
 
 public class Son extends Father {
     int num = 20;
-    //
+    //静态成员方法,当程序中的某个数据需要共享时使用static修饰
+    //通过类名访问静态内容（静态的私有成员变量不能访问）
+    private static String city;//静态成员变量
+    public static void jingtai(){
+
+    }
+/*
+1、静态内容是随着类的加载就存在了（早于对象创建）
+2、静态内容通常是使用： 类名.成员变量     类名.成员方法()
+3、静态方法中只能访问静态成员（静态变量、静态方法）
+4、静态方法中不能使用this关键字
+5、非静态方法中可以直接访问：静态成员
+*/
     public Son() {
         this("无参",0); //调用Son(String name, int age)
     }

@@ -41,4 +41,19 @@ public class Father extends Grandfather {
     public void call() {
         System.out.println("我是爸爸");
     }
+
+    @Override //抽象类中的抽象方法，必须由子类重写
+    public void method() {
+        System.out.println("爷爷在散步");
+    }
+
+/*
+1、当某个变量不允许修改数据值时，可以使用final修饰变量
+2、当某个方法不允许被子类重写时，可以使用final修饰方法
+3、当某个类不允许被继承时，可以使用final修饰类。  举例：String类
+4、final和abstract不能共存使用
+*/
+    private final int COUNT=100;
+    public final void finalmethod(){
+    }
 }

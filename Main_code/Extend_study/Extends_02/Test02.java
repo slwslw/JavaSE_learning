@@ -25,5 +25,8 @@ public class Test02 {
         Son son1 = new Son("儿子",18); //调用有参构造
         System.out.println(son1.getAge());
         System.out.println(son1.getName());
+
+        System.out.println("----------");
+        father.method();
     }
 }

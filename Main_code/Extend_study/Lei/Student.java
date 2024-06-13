@@ -1,4 +1,4 @@
-package Main_code.Lei;
+package Main_code.Extend_study.Lei;
 
 /*
  * 类：对一类具有共同“属性”和“行为”事物的描述
