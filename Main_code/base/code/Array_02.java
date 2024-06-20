@@ -1,4 +1,4 @@
-package Main_code.base;
+package Main_code.base.code;
 
 /*
 动态初始化：初始化时只指定数组长度，由系统为数组分配初始值

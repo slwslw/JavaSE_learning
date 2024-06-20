@@ -1,4 +1,4 @@
-package Main_code.base;
+package Main_code.base.code;
 
 public class HelloWorld {
     //main+回车

@@ -1,4 +1,4 @@
-package Main_code.base;
+package Main_code.base.code;
 
 public class Method_02 {
     /*函数重载

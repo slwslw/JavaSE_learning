@@ -1,4 +1,4 @@
-package Main_code.base;
+package Main_code.UpDay4.code.String_learn;
 
 /*
 String类表示字符串。 Java程序中的所有字符串文字（例如"abc" ）都实现为此类的实例
@@ -45,6 +45,24 @@ public class String_method {
         System.out.println(s7.trim());
         String s8 = " it heima "; // 中间的空格不会删除
         System.out.println(s8.trim());
-    }
+        System.out.println("-------------------");
 
+        String str = "I Love Java, I Love Heima";
+        // 判断是否存在  “Java”
+        System.out.println(str.contains("Java"));// true
+        // 判断是否以Heima字符串结尾
+        System.out.println(str.endsWith("Heima"));// true
+        // 判断是否以Java开头
+        System.out.println(str.startsWith("Java"));// false
+        // 判断 Java在字符串中的第一次出现位置
+        System.out.println(str.indexOf("Java"));// 7
+        // 判断  itcast 所在的位置
+        System.out.println(str.indexOf("itcast"));// 没找到返回-1
+        // 将所有 Love 替换为 Like ,打印替换后的新字符串
+        System.out.println(str.replace("Love", "Like"));
+        // 截取字符串 "I Love Heima"
+        System.out.println(str.substring(13));
+        // 截取字符串 "Java"
+        System.out.println(str.substring(7 , 11));
+    }
 }
