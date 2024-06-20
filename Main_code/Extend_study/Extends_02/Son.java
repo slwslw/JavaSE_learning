@@ -8,6 +8,7 @@ public class Son extends Father {
     public static void jingtai(){
 
     }
+    static String school;
 /*
 1、静态内容是随着类的加载就存在了（早于对象创建）
 2、静态内容通常是使用： 类名.成员变量     类名.成员方法()
@@ -46,6 +47,7 @@ public class Son extends Father {
         test2(); //本类没有可以直接写，自动输出父类的方法
         //调用本类的test3
         test3();
+        System.out.println(school);
     }
 
     //父类方法重写，私有方法不能被重写，方法名和参数必须同父类一样

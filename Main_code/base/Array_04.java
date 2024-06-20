@@ -22,6 +22,7 @@ public class Array_04 {
                 {9, 10, 11, 12},
                 {13, 14, 15, 16}
         };
+
         //打乱图片，改变datas数组
         Random r = new Random();
         for (int i = 0; i < datas.length; i++) {

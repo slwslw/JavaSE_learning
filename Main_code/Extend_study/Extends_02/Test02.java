@@ -1,6 +1,8 @@
 package Main_code.Extend_study.Extends_02;
 
 
+import Main_code.Extend_study.Lei.Student;
+
 public class Test02 {
     public static void main(String[] args) {
         Son son = new Son(); //调用无参构造
@@ -11,6 +13,8 @@ public class Test02 {
         son.test();
 
         System.out.println("----------");
+        Son.school = "566"; //静态调用
+        System.out.println(Son.school);
         son.show();
 
         System.out.println("----------");
@@ -28,5 +32,6 @@ public class Test02 {
 
         System.out.println("----------");
         father.method();
+
     }
 }
