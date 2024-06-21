@@ -43,7 +43,8 @@ public class CollectionDemo {
         }
     }
 }
-/*Collection集合： 是一个接口
+/*
+Collection集合： 是一个接口
     子接口： List 、 Set
     子类： ArrayList
 ArrayList集合对象可以使用传统的for循环，进行遍历

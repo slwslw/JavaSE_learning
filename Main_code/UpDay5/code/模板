@@ -1,0 +1,61 @@
+//泛型在使用时的划分： 泛型类、泛型接口、泛型方法
+
+//泛型类： 当类中的某个属性类型不确定时，可以使用泛型来表示
+public class 类名<E,T>{
+    private String name;
+    private E param;//不确定属性的类型
+
+    public void method(T arg){
+    }
+}
+类名<String,Integer> 对象 = new 类名<>();
+对象.method( Integer类型的参数 );
+
+
+//泛型接口： 当接口中某个方法的参数或返回值不确定类型时，可以使用泛型来表示
+public interface 接口名<T>{
+    public void method(T param);
+    public T show(T args);
+}
+class 子类 implements 接口名<String>{
+    //子类在实现接口时，明确了接口上泛型的类型（String类型）
+}
+class 子类<T> implements 接口名<T>{
+    //子类继续延伸使用接口上的泛型
+    //子类就变为： 泛型类
+}
+
+
+//泛型方法（提前：非泛型类）：当类中的某个方法的参数不确定或返回值不确定时，使用泛型方法
+public class 类名{
+    //泛型方法
+    public <T> void 方法名(T 参数名){
+
+    }
+    public static <T> T 方法名(T 参数名){
+
+    }
+}
+String 结果 = 类名.方法名( String类型 )
+
+泛型在使用中的注意细节
+
+泛型不支持多太态
+
+ArrayList<Person> list = new ArrayList<Student>(); //报错
+泛型在语法上支持：通配符 ？ //表示任意类型
+
+ArrayList<?> list = new ArrayList<Student>();
+泛型中的通配符，通常会配置上下限使用
+
+//泛型上下限，通常用于方法定义时
+
+//上限
+public void method(ArrayList<? extends 父类型>  list){
+    //传递的list集合对象中存储的元素必须是：父类型 或 其子类型
+}
+
+//下限
+public void method(ArrayList<? super 子类型>  list){
+    //传递的list集合对象中存储的元素必须是：子类型 或 其父类型
+}

@@ -21,7 +21,6 @@ public class For_learn {
         }
         System.out.println("---------");
 
-
         Collection<String> collection = new ArrayList<String>();
         //向集合中添加元素
         collection.add("Java");
